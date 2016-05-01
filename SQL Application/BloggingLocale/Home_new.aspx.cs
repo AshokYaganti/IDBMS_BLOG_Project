@@ -27,7 +27,7 @@ public partial class Home_new : System.Web.UI.Page
 
         if (!IsPostBack)
         {
-          //loadGrid();
+          loadGrid();
         }
     }
 
@@ -89,9 +89,7 @@ public partial class Home_new : System.Web.UI.Page
             int lm = 0;
             for (int i = 0; i <= ds.Tables[0].Rows.Count - 1; i++)
             {
-                if (lm < 1000)
-                {
-                    lm++;
+               
                     int postid = Convert.ToInt32(ds.Tables[0].Rows[i]["postid"]);
 
                     int postid1 = 0;
@@ -104,11 +102,7 @@ public partial class Home_new : System.Web.UI.Page
                     {
                         ds.Tables[0].Rows[i]["tagname"] = dt.Rows[i]["tags"].ToString();
                     }
-                }
-                else
-                {
-                    break;
-                }
+              
             }
 
             GridView2.DataSource = ds;

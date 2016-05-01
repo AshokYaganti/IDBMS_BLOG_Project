@@ -38,7 +38,7 @@ public partial class Home : System.Web.UI.Page
 
         if (!IsPostBack)
         {
-          // loadGrid();
+           loadGrid();
         }
     }
 
@@ -62,9 +62,6 @@ public partial class Home : System.Web.UI.Page
             foreach (var items in members)
             {
 
-                if (lm < 1000)
-                {
-                    lm++;
                     DataRow dr = dt.NewRow();
                     dr["postid"] = items.Id;
                     dr["post"] = items.Post;
@@ -82,12 +79,7 @@ public partial class Home : System.Web.UI.Page
                         }
                     }
                     dr["date"] = items.Date;
-                    dt.Rows.Add(dr);
-                }
-                else
-                {
-                    break;
-                }
+               
             }
 
             GridView2.DataSource = dt;

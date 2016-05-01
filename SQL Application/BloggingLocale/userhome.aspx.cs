@@ -30,7 +30,7 @@ public partial class userhome : System.Web.UI.Page
         {
 
             displayimage();
-           loadGrid();
+            loadGrid();
             
         }
         else
