@@ -89,6 +89,7 @@ http://www.tooplate.com/view/2030-elegant
                         <asp:ListItem Value="9">1 - 800,000</asp:ListItem>
                         <asp:ListItem Value="10">1 - 900,000</asp:ListItem>
                         <asp:ListItem Value="11">1 - 10,00,000</asp:ListItem>
+                        <asp:ListItem Value="12">Index on 1M Posts</asp:ListItem>
                     </asp:DropDownList>
 
                    </td>
@@ -132,9 +133,10 @@ http://www.tooplate.com/view/2030-elegant
          <div class="cleaner">
          
        
-        <asp:Chart ID="Chart1" Width="900" Height="500" runat="server" Visible="false"></asp:Chart>
+        <asp:Chart ID="Chart1" Width="900" Height="600" runat="server" Visible="false"></asp:Chart>
     
-        
+        <asp:Literal ID="lt" runat="server"></asp:Literal>
+        <div id="chart_div"></div>
          
          </div>
         
