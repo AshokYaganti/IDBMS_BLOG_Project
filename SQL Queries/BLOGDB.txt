@@ -734,4 +734,20 @@ end
 
 ............................................................................................................................................74
 
+create index index_fname
+on userdetails (fname)
+
+create index index_lname
+on userdetails (lname)
+
+create index index_title
+on postdetails (title)
+
+create index index_tag
+on tag (tagname)
+
+create index index_fname_lname
+on userdetails(fname,lname)
+
+........................................................................................................................................75
 
